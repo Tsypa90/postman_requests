@@ -1,0 +1,87 @@
+{
+	"info": {
+		"_postman_id": "9e303931-6ab2-4104-925c-af7553cc09b4",
+		"name": "job4j_chat",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23103180"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8081/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"Pavel\",\n    \"password\":\"123456\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/login",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8081/person/sign-up",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"Pavel\",\n    \"password\":\"123456\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/person/sign-up",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"person",
+						"sign-up"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
